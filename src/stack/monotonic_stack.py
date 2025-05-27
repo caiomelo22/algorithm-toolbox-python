@@ -1,17 +1,12 @@
-# Time Complexity O(n)
-# Space Complexity O(n)
-
-from typing import List
-
-def dailyTemperatures(temperatures: List[int]) -> List[int]:
-    answers = [0] * len(temperatures)
+def fn(arr):
     stack = []
+    ans = 0
 
-    for i, temp in enumerate(temperatures):
-        while stack and temperatures[stack[-1]] < temp:
-            index = stack.pop()
-            answers[index] = i - index
-
-        stack.append(i)
-
-    return answers
+    for num in arr:
+        # for monotonic decreasing, just flip the > to <
+        while stack and stack[-1] > num:
+            # do logic
+            stack.pop()
+        stack.append(num)
+    
+    return ans

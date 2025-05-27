@@ -1,18 +1,13 @@
-# Time Complexity O(n)
-# Space Complexity O(k) where k is the number of unique chars (at most 128 for ASCII, 256 for extended ASCII)
+def fn(arr):
+    left = ans = curr = 0
 
-def lengthOfLongestSubstring(s: str) -> int:
-    longest = 0
-    last_non_duplicate = 0
-    hashmap = dict()
+    for right in range(len(arr)):
+        # do logic here to add arr[right] to curr
 
-    for i in range(len(s)):
-        letter = s[i]
+        while WINDOW_CONDITION_BROKEN:
+            # remove arr[left] from curr
+            left += 1
 
-        if letter in hashmap:
-            last_non_duplicate = max(hashmap[letter] + 1, last_non_duplicate)
-            
-        longest = max(i - last_non_duplicate + 1, longest)
-        hashmap[letter] = i
-
-    return longest
+        # update ans
+    
+    return ans
