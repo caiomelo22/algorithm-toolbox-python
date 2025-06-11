@@ -1,5 +1,7 @@
 # Cheatsheets
 
+Disclaimer: Information copied from https://leetcode.com/explore/interview/card/cheatsheets/720/resources/4725/
+
 This article is a collection of cheat sheets that you can use as you solve problems and prepare for interviews. You will find:
 
 - Time complexity (Big O) cheat sheet
@@ -218,7 +220,7 @@ For completeness, here is a chart that lists common sorting algorithms and their
 
 ## General Data Structures & Algorithms Flowchart
 
-
+![image](https://github.com/user-attachments/assets/5f7c6b1b-949d-4395-8c54-f1c38ae86405)
 
 # Interview Stages Cheat Sheet
 
